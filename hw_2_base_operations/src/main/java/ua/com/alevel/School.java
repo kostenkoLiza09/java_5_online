@@ -3,7 +3,6 @@ package ua.com.alevel;
 import java.io.IOException;
 import java.io.BufferedReader;
 
-
 public class School {
     public static void lesson (BufferedReader bufferedReader) throws IOException {
         System.out.println("You can enter the lesson number: ");
