@@ -19,7 +19,6 @@ public class School {
 
             System.out.println(endLesson + hour + " : " + min);
 
-
         }
 
     }

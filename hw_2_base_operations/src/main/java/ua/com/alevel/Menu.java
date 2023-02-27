@@ -13,7 +13,7 @@ public class Menu {
         while ((select = bufferedReader.readLine()) != null) {
             tasks(bufferedReader, select);
         }
-        }
+    }
 
         public void menu1 (){
             System.out.println();
