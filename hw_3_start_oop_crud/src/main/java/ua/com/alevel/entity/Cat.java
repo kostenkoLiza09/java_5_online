@@ -4,15 +4,19 @@ public class Cat extends BaseEntity {
     private String breed;
     private String name;
     private int age;
+
     public String getBreed() {
         return breed;
     }
+
     public void setBreed(String breed) {
         this.breed = breed;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -20,8 +24,9 @@ public class Cat extends BaseEntity {
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
-        if(age > 1 && age < 10){
+        if (age > 1 && age < 10) {
             this.age = age;
         }
 
