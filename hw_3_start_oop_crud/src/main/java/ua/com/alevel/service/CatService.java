@@ -22,8 +22,6 @@ public class CatService extends BaseEntity {
         }
     }
 
-
-
     public Cat delete(String id) {
         for(int i = 0; i < cats.size(); i++) {  // по циклу перебераем котячие id
             if (cats.get(i).getId().equals(id)) { // проводим проверку совпадает id
@@ -34,7 +32,6 @@ public class CatService extends BaseEntity {
         }
         return null; // выводим null если не нашли кота с id
     }
-
 
     public Cat findById(String id) {
         for (Cat cat : cats) {
@@ -49,6 +46,7 @@ public class CatService extends BaseEntity {
     public ArrayList<Cat> findAll(){
         return cats;
     }
+
     private String generateId(){
         String id = UUID.randomUUID().toString();
         for (Cat cat : cats) {
@@ -56,7 +54,6 @@ public class CatService extends BaseEntity {
                 return generateId();
 
             }
-
         }
         return id;
     }
